@@ -27,13 +27,13 @@ div.img-titulo{
     margin-top: 20px;
     margin-left: 20px;
     border-radius: 30px;
-    box-shadow: 0px 0px 5px red;
+    box-shadow: 0px 0px 5px blue;
     
 }
 div.texto-titulo{
     flex: auto;
     height: 200px;
-    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     
     
 }
@@ -46,7 +46,7 @@ div.texto-titulo > h1 {
 }
 div.menu {
     display: flex;
-    background-color: rgb(235, 15, 125);
+    
     justify-content: center;
     text-align: center;
 }
@@ -64,15 +64,17 @@ div.item-menu > p {
 }
 div.quem {
     display: flex;    
-    /*background-color: chartreuse; */
+    
     text-align: center;
+    background-image: url("img/bg01.jpg");
 }
 div.bloco {
     flex: auto;
-   /* background-color: darkgoldenrod; */
+   
     border: 3px solid white;
     color: white;
 }
+
 .it-quem-img > img {
     height: 250px;
     border-radius: 30px;
@@ -84,7 +86,7 @@ div.bloco {
 
 div.col-rodape {  
     flex: auto;  
-    background-color: rgb(208, 127, 255);
+    color: white;
     border: 5px solid white;
     border-bottom: 0px;
     height: 100px;         
