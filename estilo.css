@@ -79,10 +79,18 @@ div.bloco {
     height: 250px;
     border-radius: 30px;
     margin-top: 10px;   
+    margin-bottom: 15px;
     outline: thick ridge blue;
     
 }
-
+.pquem {
+    text-shadow: 2px 2px 6px white;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
 
 div.col-rodape {  
     flex: auto;  
@@ -125,12 +133,18 @@ p#ft {
     .quem {
       flex-direction: column;
     }
+    .pquem {
+        text-shadow: 2px 2px 6px white;
+        width: 90%;
+        margin-left: 10px ;
+        
+    }
     .it-quem-img > img {        
         border-radius: 20px;
         box-shadow: 5px 5px 5px blue;    
         outline: transparent;    
         max-width: 70%;
-        height: 100px;
+        height: 150px;
     }
     
 
