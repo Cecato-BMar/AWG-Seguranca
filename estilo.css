@@ -2,10 +2,12 @@
 
 *{
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;  
+    box-sizing: border-box;  
 }
 body {
     background-color: blue;
+    background-image: linear-gradient(blue, black);
 }
 div.container {
     display: flex; 
@@ -13,27 +15,34 @@ div.container {
     justify-content: center;
     text-align: center;
     background-color: black;
+    background-image: linear-gradient(blue, black); 
 }
 div.img-titulo{
     flex: auto;    
     
 }
 .img {
+    width: 70%;
     height: 150px;
     margin-top: 20px;
     margin-left: 20px;
     border-radius: 30px;
+    box-shadow: 0px 0px 5px red;
+    
 }
 div.texto-titulo{
     flex: auto;
     height: 200px;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
     
     
 }
 div.texto-titulo > h1 {
     color: white;
     font-size: 3em;
-    padding-top: 60px;    
+    padding-top: 60px;
+    margin-left: 20px;
+       
 }
 div.menu {
     display: flex;
@@ -43,34 +52,84 @@ div.menu {
 }
 div.item-menu {
     flex: auto;
-    background-color: aqua;
-    border: 5px solid rgb(255, 255, 255);
+    background-color: aqua;    
+    border: 2px solid rgb(255, 255, 255);
     height: 30px;
     list-style: none;               
 }
 div.item-menu > p {
-    padding-top: 5px;
+    padding: 5px;
+    background-color: blue;
+    color: white;
 }
 div.quem {
     display: flex;    
-    background-color: chartreuse;
+    /*background-color: chartreuse; */
     text-align: center;
 }
 div.bloco {
     flex: auto;
-    background-color: darkgoldenrod;
-    border: 5px solid white;
+   /* background-color: darkgoldenrod; */
+    border: 3px solid white;
+    color: white;
 }
 .it-quem-img > img {
     height: 250px;
     border-radius: 30px;
-    padding-top: 15px;
+    margin-top: 10px;   
+    outline: thick ridge blue;
+    
 }
 
 
-
+div.col-rodape {  
+    flex: auto;  
+    background-color: rgb(208, 127, 255);
+    border: 5px solid white;
+    border-bottom: 0px;
+    height: 100px;         
+}
+div.col-rodape > ul {
+    list-style: none;
+    padding-top: 10px;
+}
+div.col-rodape > li {
+    padding-top: 5px;
+}
+p#ft {
+    background-color: brown;
+    padding: 10px;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+}
 @media (max-width: 800px) {
+    div.texto-titulo{
+        flex: auto;
+        height: auto;
+        
+        
+        
+    }
+    div.texto-titulo > h1 {
+        color: white;
+        font-size: 3em;
+        padding-top: 60px;
+        margin-left: 20px;
+           
+    }
+
+    
     .quem {
       flex-direction: column;
     }
-  }
+    .it-quem-img > img {        
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px blue;    
+        outline: transparent;    
+        max-width: 70%;
+        height: 100px;
+    }
+    
+
+}
