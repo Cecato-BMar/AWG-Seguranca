@@ -46,13 +46,14 @@ div.texto-titulo > h2 {
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-div.menu {
+/*
+.menu {
     display: flex;    
     justify-content: center;
     text-align: center;
     
 }
-div.item-menu {
+.item-menu {
     flex: auto;       
     border: 3px solid rgb(255, 255, 255);
     border-radius: 20px;
@@ -74,6 +75,93 @@ div.item-menu {
     color: rgb(235, 175, 10);  
     
 }
+*/
+/* Estilos do menu */
+.menu {
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-items li {
+    margin: 0 15px;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-items li a:hover {
+    color: #ff6347;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .menu-items li {
+        margin: 10px 0;
+    }
+
+    .menu-items li a {
+        font-size: 20px;
+    }
+}
+
+/* Estilos de animação para o menu toggle */
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Adicione quaisquer outros estilos necessários aqui */
 div.quem {
     display: flex;     
     text-align: center;
@@ -226,7 +314,7 @@ div.col-rodape > li {
     padding-left: 20px;
 }
 p#ft {
-    background-color: brown;
+    background-color: #333;
     padding: 10px;
     margin-top: 0px;
     color: white;

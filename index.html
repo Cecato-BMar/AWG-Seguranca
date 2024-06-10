@@ -15,12 +15,27 @@
             
         </div>
     </div>
-    <div class="menu">
+    <!--
+    <nav class="menu">
         <div class="item-menu"><a href="#">Home</a></div>
         <div class="item-menu"><a href="sobre.html">Sobre</a></div>
         <div class="item-menu"><a href="servicos.html">serviços</a></div>
         <div class="item-menu"><a href="contato.html">contato</a></div>
-    </div>
+    </nav>
+    -->
+    <nav class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="menu-items" id="menu-items">
+            <li class="item-menu"><a href="#">Home</a></li>
+            <li class="item-menu"><a href="sobre.html">Sobre</a></li>
+            <li class="item-menu"><a href="servicos.html">Serviços</a></li>
+            <li class="item-menu"><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
     <div class="quem">
         <div class="bloco">
             <div class="it-quem-titulo"><H1 class="sobre1"> S O B R E &nbsp  N Ó S </H1></div>
@@ -120,5 +135,15 @@
         
     </div>
     <p id="ft">Site desenvolvido por <strong>B-MAR Soluções em Técnologia</strong>&#174, resposável técnico Ricardo Cecato </p>
+    
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuItems = document.getElementById('menu-items');
+    
+        menuToggle.addEventListener('click', () => {
+            menuItems.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
