@@ -422,7 +422,7 @@ p#ft {
 .s-nos {
     display: flex;    
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 20px;   
     
 }
 .s-nos h1 {
@@ -446,14 +446,13 @@ p#ft {
     color: white;
 }
 .col-s-nos-e {    
-    flex: auto;    
-    
-    max-height: 400px;       
-    
+    flex: auto;        
+    max-height: 400px;
+    max-width: 400px;  
+    margin-left: 400px;
+       
 }
-.col-s-nos-d {
-    margin-right: 200px;
-}
+
 .col-s-nos-e img {
     float: right;
     margin-top: 15px;
@@ -488,12 +487,25 @@ p#ft {
 
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
+    .s-nos {
+        margin: 5px;
+    }
     .col-s-nos-e img {        
         max-width: 100%;
         
     }
-    .col-s-nos-d {
-        margin-right: auto;
+    .col-s-nos-e {
+        
+        margin: 0px;
+        
     }
+    .s-nos p {
+        max-width: 400px;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 0px;
+        color: white;
+    }
+    
 }
 /*--------------------------------------FIM SOBRE--------------------------------*/
