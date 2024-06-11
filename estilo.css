@@ -512,21 +512,18 @@ p#ft {
 /*--------------------------------------SERVIÇOS--------------------------------*/
 .serv {
     display: flex;
-    height: 90%;
+    flex-wrap: wrap;
+    height: 47vh;
     margin: 20px;
     
 }
-.dserv {
-    flex: auto;
-    background-color: aqua;    
-    height: 90%;
-    margin: 20px;    
-}
+
 
 .img-serv {
     flex: auto;
     background-image: url("img/com03.jpg");
-    height: 350px;
+    background-size: cover;
+    min-width: 300px;
     opacity: 0.7;
     border-radius: 25px 0px 25px 0px;
     
@@ -535,7 +532,7 @@ p#ft {
     font-size: 3em;
     color: white;
     background-image: linear-gradient(to right, blue, rgba(255, 255, 255, 0));
-    border-radius: 25px 0px 25px 0px;
+    border-radius: 0px 0px 25px 0px;
    
    
     
@@ -547,6 +544,11 @@ p#ft {
 }
 
 
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    
+}
 
 
 /*--------------------------------------FIM SERVIÇOS--------------------------------*/
