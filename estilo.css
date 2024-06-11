@@ -509,3 +509,41 @@ p#ft {
     
 }
 /*--------------------------------------FIM SOBRE--------------------------------*/
+/*--------------------------------------SERVIÇOS--------------------------------*/
+.serv {
+    display: flex;
+    height: 90%;
+    margin: 20px;
+    
+}
+.dserv {
+    flex: auto;
+    background-color: aqua;    
+    height: 90%;
+    margin: 20px;    
+}
+
+.img-serv {
+    flex: auto;
+    background-image: url("img/com03.jpg");
+    height: 350px;
+    opacity: 0.7;
+    
+}
+.img-serv h1 {
+    color: white;
+    float: right;
+    background-color: #fdfdfd77;
+   
+    
+}
+.cont-serv {
+    flex: auto;
+    background-color: chartreuse;
+    
+}
+
+
+
+
+/*--------------------------------------FIM SERVIÇOS--------------------------------*/
