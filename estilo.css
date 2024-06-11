@@ -46,36 +46,7 @@ div.texto-titulo > h2 {
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-/*
-.menu {
-    display: flex;    
-    justify-content: center;
-    text-align: center;
-    
-}
-.item-menu {
-    flex: auto;       
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    width: 10px;
-    margin: 5px;
-    list-style: none;  
-    background-color:rgb(235, 175, 10); 
-    color: white;            
-}
-.item-menu:hover {
-    background-color: white ;
-    
-}
-.menu a {    
-    text-decoration: none;
-    font-weight: bold;
-}
-.menu a:hover {    
-    color: rgb(235, 175, 10);  
-    
-}
-*/
+
 /* Estilos do menu */
 .menu {
     background-color: #333;
@@ -122,8 +93,6 @@ div.texto-titulo > h2 {
     color: #ff6347;
 }
 
-
-/* Adicione quaisquer outros estilos necessários aqui */
 div.quem {
     display: flex;     
     text-align: center;
@@ -344,6 +313,30 @@ p#ft {
         margin-left: 20px;
            
     }
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .menu-items li {
+        margin: 10px 0;
+    }
+
+    .menu-items li a {
+        font-size: 20px;
+    }
+
+
     .bl-01 {
         
         width: 80vw;
@@ -377,45 +370,7 @@ p#ft {
         max-width: 70%;
         height: 150px;
     }
-    /* Estilos responsivos */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    .menu-items {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu-items.active {
-        display: flex;
-    }
-
-    .menu-items li {
-        margin: 10px 0;
-    }
-
-    .menu-items li a {
-        font-size: 20px;
-    }
-}
-
-/* Estilos de animação para o menu toggle */
-.menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-}
-
-.menu-toggle.active .bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-}
-
+    
 }
 
 @media (max-width: 480px) {
@@ -447,3 +402,75 @@ p#ft {
         border-radius: 30px ;
     }
 }
+
+/* Estilos de animação para o menu toggle */
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------CSS SOBRE----------------------------------*/
+/* Estilos da seção Sobre Nós */
+.s-nos {
+    display: flex;    
+    flex-wrap: wrap;
+    margin: 20px;
+    
+}
+.s-nos h1 {
+    color: white;
+    font-size: 4em;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 4px black;
+}
+.s-nos h2 {
+    color: white;     
+    margin-top: 10px;
+    margin-left: 10px;
+    background-image: linear-gradient(to right, rgb(77, 77, 77, 1), rgba(255, 255, 255, 0));
+}
+.s-nos p {
+    max-width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+}
+.col-s-nos-e {
+    flex: auto;    
+    max-height: 400px;
+    float: left;
+}
+.col-s-nos-e img {
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    max-height: 80%;
+    max-width: 80%;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 5px 5px 8px white;
+}
+.col-s-nos-d{
+    flex: auto;
+    float: left;    
+    
+}
+/* Animações */
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .col-s-nos-e img {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}
+/*--------------------------------------FIM SOBRE--------------------------------*/

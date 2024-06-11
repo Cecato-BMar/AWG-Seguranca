@@ -15,17 +15,32 @@
             
         </div>
     </div>
-    <div class="menu">
-        <div class="item-menu"><a href="index.html">Home</a></div>
-        <div class="item-menu"><a href="#">Sobre</a></div>
-        <div class="item-menu"><a href="servicos.html">serviços</a></div>
-        <div class="item-menu"><a href="contato.html">contato</a></div>
-    </div>
-    <div class="quem">
-        <div class="bloco">
-            <div class="it-quem-titulo"><H1> Página em cosntrução </H1></div>
+    <nav class="menu">
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
-    </div>
+        <ul class="menu-items" id="menu-items">
+            <li class="item-menu"><a href="index.html">Home</a></li>
+            <li class="item-menu"><a href="#">Sobre</a></li>
+            <li class="item-menu"><a href="servicos.html">Serviços</a></li>
+            <li class="item-menu"><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <section class="s-nos">
+        <div class="col-s-nos-e">
+            <img src="img/Ev01.jpg" alt="Sobre Nós">
+        </div>
+        <div class="col-s-nos-d">
+            <h1>Sobre Nós</h1>
+            <h2>AWG Segurança Particular - Excelência em Proteção</h2>
+            <p>Na AWG Segurança Particular, nossa prioridade é a sua segurança. Com anos de experiência no mercado, somos especializados em oferecer serviços de segurança para eventos, casamentos, festas, lojas e comércios</p>
+            
+        </div>
+    </section>
+    
+
     
     <div class="container">
 
@@ -51,5 +66,16 @@
         
     </div>
     <p id="ft">Site desenvolvido por <strong>B-MAR Soluções em Técnologia</strong>&#174, resposável técnico Ricardo Cecato </p>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuItems = document.getElementById('menu-items');
+
+        menuToggle.addEventListener('click', () => {
+            menuItems.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        
+    </script>
 </body>
 </html>
