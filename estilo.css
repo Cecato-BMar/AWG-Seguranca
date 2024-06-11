@@ -445,10 +445,14 @@ p#ft {
     margin-left: 10px;
     color: white;
 }
-.col-s-nos-e {
+.col-s-nos-e {    
     flex: auto;    
-    max-height: 400px;
-    float: left;
+    
+    max-height: 400px;       
+    
+}
+.col-s-nos-d {
+    margin-right: 200px;
 }
 .col-s-nos-e img {
     float: right;
@@ -459,18 +463,37 @@ p#ft {
     border-radius: 0px 20px 0px 20px;
     box-shadow: 5px 5px 8px white;
 }
-.col-s-nos-d{
-    flex: auto;
-    float: left;    
-    
+.benefits img {
+    max-width: 90%;
+    border-radius: 50%;
+}
+.why-awg2 {
+    background-color: blue;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.why-awg2 h2 {
+    font-size: 2em;
+}
+
+.cta2 {
+    color: white;
+}
+.divisao {
+    height: 15px;
+    background-color: white;
 }
 /* Animações */
 
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
-    .col-s-nos-e img {
-        padding-bottom: 0px;
-        margin-bottom: 0px;
+    .col-s-nos-e img {        
+        max-width: 100%;
+        
+    }
+    .col-s-nos-d {
+        margin-right: auto;
     }
 }
 /*--------------------------------------FIM SOBRE--------------------------------*/
