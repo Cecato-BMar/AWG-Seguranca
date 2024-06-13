@@ -247,6 +247,7 @@ div.col-rodape > li {
 .col-rodape h1 {
     text-align: left;
     padding-left: 20px;
+    
 }
 p#ft {
     background-color: #333;
@@ -254,6 +255,20 @@ p#ft {
     margin-top: 0px;
     color: white;
     text-align: center;
+}
+.redes {
+    text-align: left;
+    
+}
+.redes img {
+    width: 70px;
+    max-width: 100px;
+    padding-left: 20px;
+    margin-left: 50px;
+    
+}
+.redes h1 {
+    font-size: 2em;
 }
 /* Ajustes para dispositivos móveis */
 @media (max-width: 1096px) {
