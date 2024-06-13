@@ -270,6 +270,7 @@ p#ft {
 .redes h1 {
     font-size: 2em;
 }
+
 /* Ajustes para dispositivos móveis */
 @media (max-width: 1096px) {
     .img {
