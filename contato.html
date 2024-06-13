@@ -28,14 +28,24 @@
             <li class="item-menu"><a href="#">Contato</a></li>
         </ul>
     </nav>
-    <div class="quem">
-        <div class="bloco">
-            <div class="it-quem-titulo"><H1> Página em cosntrução </H1></div>
+    <section class="contato">            
+        
+        <div class="dv-contato">
+            
+            <h1>Contato</h1>
+            <h2>Entre em Contato com a AWG Segurança Particular</h2>
+            <p>Estamos prontos para ajudar você a garantir a segurança do seu evento ou estabelecimento comercial. Entre em contato conosco através dos seguintes meios:</p>
+            <ul>
+                <li><strong>Telefone:</strong> (13) 9876-5432</li>
+                <li><strong>Email:</strong> contato@awgseguranca.com</li>
+                <li><strong>Endereço:</strong> Rua Exemplo, 123, Bairro, Cidade, Estado, CEP</li>
+            </ul>
         </div>
-    </div>
+   
+
+</section>
     
     <div class="container">
-
                 <div class="col-rodape">
                     <h1>Menu</h1>
                     <ul>
@@ -58,5 +68,15 @@
         
     </div>
     <p id="ft">Site desenvolvido por <strong>B-MAR Soluções em Técnologia</strong>&#174, resposável técnico Ricardo Cecato </p>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuItems = document.getElementById('menu-items');
+    
+        menuToggle.addEventListener('click', () => {
+            menuItems.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
